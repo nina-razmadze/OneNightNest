@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import styled from "styled-components";
+import { Button, Input, Layout } from "antd";
+const { Header, Footer, Sider, Content } = Layout;
 
+const CustomLayout = styled(Layout)`
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+`;
+
+const CustomFooter = styled(Footer)`
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+`;
+
+const CustomContent = styled(Content)`
+  margin-top: 64px; /* Adjust as needed to account for header height */
+  margin-bottom: 64px; /* Adjust as needed to account for footer height */
+`;
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CustomLayout>
+        <Header>Header</Header>
+        <CustomContent>Content</CustomContent>
+        <CustomFooter>Footer</CustomFooter>
+      </CustomLayout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
