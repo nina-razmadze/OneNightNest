@@ -11,7 +11,7 @@ export default function PublicLayout({
     <div>
       <CustomLayout>
         <PublicHeader />
-        <CustomContent>{children}</CustomContent>
+        {children}
         <PublicFooter />
       </CustomLayout>
     </div>
