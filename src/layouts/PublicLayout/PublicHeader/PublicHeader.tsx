@@ -20,7 +20,7 @@ export default function PublicHeader() {
           </a>
           <div className="flex items-center lg:order-2">
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-              <li className="hover:bg-primary-light font-medium rounded-full text-sm px-5 py-3 text-center  cursor-pointer flex items-center text-center md:mb-5 sm:mb-5 2xl:mb-6 xl:mt-4 lg:mt-4">
+              <li className="hover:bg-primary-light font-medium rounded-full text-sm px-5 py-3 text-center  cursor-pointer flex items-center text-center mb-1.5  ">
                 <LuPhoneCall
                   className="text-black  mr-4 "
                   style={{ width: "23px", height: "23px" }}
