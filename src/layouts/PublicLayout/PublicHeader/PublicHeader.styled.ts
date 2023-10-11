@@ -1,7 +1,3 @@
-import styled from "styled-components";
-import { Layout } from "antd";
-const { Header } = Layout;
-
 export const customHeaderClasses = `
   fixed
   top-0
