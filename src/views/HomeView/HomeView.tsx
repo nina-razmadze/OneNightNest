@@ -8,7 +8,9 @@ export default function HomeView() {
   return (
     <PublicLayout>
       <div className={HomeBackground}>
-        <ContentImage />
+        <div className="bg-primary-default h-[600px]">
+          <ContentImage />
+        </div>
         <SearchForm />
       </div>
     </PublicLayout>
