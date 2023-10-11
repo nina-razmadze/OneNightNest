@@ -9,8 +9,9 @@ module.exports = {
           dark: "#ffbca7",
         },
         secondary: {
-          light: "#FFA980",
-          dark: "#FFAC93",
+          light: "#FFDAB9",
+          default: "#FFAC93",
+          dark: "#FFA980",
         },
       },
     },
