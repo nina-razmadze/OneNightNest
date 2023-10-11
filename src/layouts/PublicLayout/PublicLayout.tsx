@@ -1,6 +1,6 @@
 import PublicHeader from "./PublicHeader/PublicHeader";
 import PublicFooter from "./PublicFooter/PublicFooter";
-import { CustomLayout, CustomContent } from "./PublicLayout.styled";
+import { CustomLayout } from "./PublicLayout.styled";
 
 export default function PublicLayout({
   children,
