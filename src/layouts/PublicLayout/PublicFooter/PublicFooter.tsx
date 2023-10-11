@@ -1,4 +1,5 @@
 import { FooterBackground } from "./PublicFooter.styled";
+import houselogo from "../../../images/houselogo.jpg";
 
 export default function PublicFooter() {
   return (
@@ -10,8 +11,8 @@ export default function PublicFooter() {
             className="flex items-center mb-4 sm:mb-0"
           >
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8 mr-3"
+              src={houselogo}
+              className="h-8 mr-3 rounded-full"
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
