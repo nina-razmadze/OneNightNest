@@ -5,7 +5,7 @@ export const customHeaderClasses = `
   
 `;
 export const background = `
-bg-primary-light 
+bg-primary-default 
 `;
 export const navClasses = `
   border-gray-200

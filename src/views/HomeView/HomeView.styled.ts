@@ -1,3 +1,3 @@
 export const HomeBackground = `
 h-[800px]
-bg-primary-default`;
+bg-primary-light`;
