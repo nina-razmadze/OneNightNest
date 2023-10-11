@@ -5,11 +5,11 @@ module.exports = {
       colors: {
         primary: {
           light: "#fffbf2",
-          default: "#FFDAB9",
-          dark: "#ffbca7",
+          default: "#FFE6CD",
+          dark: "#FFAC93",
         },
         secondary: {
-          light: "#FFDAB9",
+          light: "#FFE6CD",
           default: "#FFAC93",
           dark: "#FFA980",
         },
