@@ -3,7 +3,7 @@ import halfTwo from "../../../images/halfTwo.webp";
 
 export default function RightImageLine() {
   return (
-    <div className="bg-primary-default rounded-lg  flex justify-center mb-[60px] relative ">
+    <div className="bg-primary-default rounded-lg  flex justify-center mb-[60px] mt-[100px] relative ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-[1410px] h-[550px]  ">
         <div className="flex flex-col p-4  max-w-screen-xl mx-auto mt-[120px] text-black items-center">
           <p>Search, choose and book</p>
