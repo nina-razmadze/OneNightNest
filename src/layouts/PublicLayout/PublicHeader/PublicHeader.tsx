@@ -2,6 +2,7 @@ import { navClasses, background } from "./PublicHeader.styled";
 import { LuPhoneCall } from "react-icons/lu";
 import Leng from "../../../components/Leng/Leng";
 import HouseLogo from "../../../images/houselogo.jpg";
+import { Link } from "react-router-dom";
 
 export default function PublicHeader() {
   return (
@@ -39,9 +40,11 @@ export default function PublicHeader() {
             <button className="text-white bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 focus:outline-none focus:ring focus:border-primary-dark  cursor-pointer ml-8">
               Log in
             </button>
-            <button className="text-white  bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer">
-              Get started
-            </button>
+            <Link to="/SignUp">
+              <button className="text-white  bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer">
+                Get started
+              </button>
+            </Link>
           </div>
         </div>
       </nav>

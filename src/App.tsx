@@ -1,14 +1,24 @@
 import "./App.css";
-import HomeView from "./views/HomeView/HomeView";
 import React, { lazy, Suspense } from "react";
-const RegisterView = lazy(
-  () => import("./views/AuthView/RegisterView/RegisterView")
-);
+
+import HomeView from "./views/HomeView/HomeView";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import RegisterView from "./views/AuthView/RegisterView/RegisterView";
+// const RegisterView = lazy(
+//   () => import("./views/AuthView/RegisterView/RegisterView")
+// );
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <HomeView />
-    </Suspense>
+    <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div>
+          <HomeView />
+          <Routes>
+            <Route path="/SignUp" element={<RegisterView />} />
+          </Routes>
+        </div>
+      </Suspense>
+    </Router>
   );
 }
 
