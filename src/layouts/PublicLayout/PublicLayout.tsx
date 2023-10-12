@@ -8,7 +8,7 @@ export default function PublicLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className="w-100%">
       <CustomLayout>
         <PublicHeader />
         {children}

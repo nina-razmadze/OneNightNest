@@ -7,7 +7,7 @@ export default function PublicHeader() {
   return (
     <header className={background}>
       <nav className={navClasses}>
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <div className="flex flex-wrap justify-between items-center mx-auto w-100%">
           <a href="https://flowbite.com" className="flex items-center">
             <img
               src={HouseLogo}
@@ -20,7 +20,7 @@ export default function PublicHeader() {
           </a>
           <div className="flex items-center lg:order-2">
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-              <li className="hover:bg-secondary-light font-medium rounded-full text-sm px-5 py-3 text-center  cursor-pointer flex items-center text-center mb-1.5  ">
+              <li className="hover:bg-primary-light font-medium rounded-full text-sm px-5 py-3 text-center  cursor-pointer flex items-center text-center mb-1.5  ">
                 <LuPhoneCall
                   className="text-black  mr-4 "
                   style={{ width: "23px", height: "23px" }}
@@ -36,7 +36,7 @@ export default function PublicHeader() {
             <div className=" font-medium rounded-full text-sm  text-center mr-2 mb-2 cursor-pointers  ">
               <Leng />
             </div>
-            <button className="text-white bg-secondary-default font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 focus:outline-none focus:ring focus:border-primary-dark  cursor-pointer ml-8">
+            <button className="text-white bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 focus:outline-none focus:ring focus:border-primary-dark  cursor-pointer ml-8">
               Log in
             </button>
             <button className="text-white  bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer">

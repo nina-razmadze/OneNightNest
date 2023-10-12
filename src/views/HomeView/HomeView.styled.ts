@@ -1,2 +1,2 @@
 export const HomeBackground = `s
-bg-primary-light`;
+bg-secondary-light`;

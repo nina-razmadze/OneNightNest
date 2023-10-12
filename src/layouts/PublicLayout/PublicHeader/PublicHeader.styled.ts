@@ -1,11 +1,6 @@
-export const customHeaderClasses = `
-  fixed
-  top-0
-  w-full
-  
-`;
 export const background = `
-bg-primary-light 
+ w-full
+bg-secondary-light 
 `;
 export const navClasses = `
   border-gray-200

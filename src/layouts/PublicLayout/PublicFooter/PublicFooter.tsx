@@ -4,7 +4,7 @@ import houselogo from "../../../images/houselogo.jpg";
 export default function PublicFooter() {
   return (
     <footer className={FooterBackground}>
-      <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div className="w-full  mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a
             href="https://flowbite.com/"

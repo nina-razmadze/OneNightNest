@@ -5,8 +5,8 @@ import thirdbackground from "../../images/thirdbackground.jpg";
 
 export default function ContentImage() {
   return (
-    <div className="mt-[80px] bg-primary-dark">
-      <div className="flex  h-[500px]">
+    <div className="mt-[80px] w-full ">
+      <div className="flex  bg-primary-dark h-[500px]">
         <img
           src={secbackground}
           style={{
