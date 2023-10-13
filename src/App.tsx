@@ -8,10 +8,10 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import RegisterView from "./views/AuthView/RegisterView/RegisterView";
-// const RegisterView = lazy(
-//   () => import("./views/AuthView/RegisterView/RegisterView")
-// );
+// import RegisterView from "./views/AuthView/RegisterView/RegisterView";
+const RegisterView = lazy(
+  () => import("./views/AuthView/RegisterView/RegisterView")
+);
 function App() {
   return (
     <Router>
