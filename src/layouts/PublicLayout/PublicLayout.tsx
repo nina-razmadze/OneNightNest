@@ -1,5 +1,5 @@
-import PublicHeader from "./PublicHeader/PublicHeader";
-import PublicFooter from "./PublicFooter/PublicFooter";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 import { CustomLayout } from "./PublicLayout.styled";
 
 export default function PublicLayout({
@@ -10,9 +10,9 @@ export default function PublicLayout({
   return (
     <div className="w-100%">
       <CustomLayout>
-        <PublicHeader />
+        <Header />
         {children}
-        <PublicFooter />
+        <Footer />
       </CustomLayout>
     </div>
   );

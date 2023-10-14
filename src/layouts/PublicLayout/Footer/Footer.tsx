@@ -1,7 +1,7 @@
-import { FooterBackground } from "./PublicFooter.styled";
+import { FooterBackground } from "./SFooter.styled";
 import houselogo from "../../../images/houselogo.jpg";
 
-export default function PublicFooter() {
+export default function Footer() {
   return (
     <footer className={FooterBackground}>
       <div className="w-full  mx-auto p-4 md:py-8">
