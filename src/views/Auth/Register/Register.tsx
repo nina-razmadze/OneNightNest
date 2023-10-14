@@ -1,6 +1,7 @@
 import logo from "@src/images/houselogo.jpg";
+import { Link } from "react-router-dom";
 
-export default function RegisterView() {
+export default function Register() {
   return (
     <section className="bg-white">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -85,12 +86,14 @@ export default function RegisterView() {
               </div>
               <p className="text-sm font-light text-gray-700 ">
                 Already have an account?{" "}
-                <a
-                  href="#"
-                  className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                >
-                  Login here
-                </a>
+                <Link to="/auth/login">
+                  <a
+                    href="#"
+                    className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  >
+                    Login here
+                  </a>
+                </Link>
               </p>
             </form>
           </div>

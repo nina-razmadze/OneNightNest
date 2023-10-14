@@ -40,7 +40,7 @@ export default function PublicHeader() {
             <button className="text-white bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 focus:outline-none focus:ring focus:border-primary-dark  cursor-pointer ml-8">
               Log in
             </button>
-            <Link to="/SignUp">
+            <Link to="/auth/signup">
               <button className="text-white  bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer">
                 Get started
               </button>
