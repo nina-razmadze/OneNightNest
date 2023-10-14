@@ -7,7 +7,7 @@ export default function RegisterView() {
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a
             href="#"
-            className="flex items-center mb-6 text-2xl font-semibold text-black"
+            className="flex items-center mb-6 text-2xl font-semibold text-black hover:text-black"
           >
             <img className="w-8 h-8 mr-2 rounded-full" src={logo} alt="logo" />
             შექმენი ანგარიში უფასოდ
@@ -64,10 +64,10 @@ export default function RegisterView() {
                     />
                   </div>
                   <div className="ml-3 text-sm">
-                    <label className="font-light text-gray-500 dark:text-gray-300">
+                    <label className="font-light text-black ">
                       I accept the{" "}
                       <a
-                        className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                        className="font-medium text-primary-600 hover:underline text-black"
                         href="#"
                       >
                         Terms and Conditions
@@ -77,11 +77,11 @@ export default function RegisterView() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className="w-full text-white bg-primary-600  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
                 >
                   Create an account
                 </button>
-                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                <p className="text-sm font-light text-gray-500 ">
                   Already have an account?{" "}
                   <a
                     href="#"
