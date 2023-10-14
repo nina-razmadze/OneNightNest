@@ -6,7 +6,7 @@ export default function AuthView() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <div className=" ">
+        <div>
           <Route path="/SignUp" element={<RegisterView />} />
         </div>
       </Routes>
