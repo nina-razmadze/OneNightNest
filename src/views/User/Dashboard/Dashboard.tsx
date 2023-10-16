@@ -1,6 +1,6 @@
 import { BiUser } from "react-icons/bi";
 
-import SideBar from "@src/components/SideBar/SideBar";
+import SideBar from "@src/layouts/UserPageLayout/SideBar/SideBar";
 import Container from "@src/components/Container/Container";
 
 import { BsFillCreditCardFill } from "react-icons/bs";
