@@ -1,27 +1,20 @@
+import { useWindowSize } from "rooks";
 import Leng from "@src/components/Leng/Leng";
+
+import { SHeaderWrapper } from "./SHeader.styled";
 import user from "@src/assets/images/default-user-image.png";
 
-
-
 export default function Header() {
+  const { innerWidth } = useWindowSize();
+
   return (
-    <div>
-      <header>
+    <div className="m-auto justify-end items-center ">
+      <SHeaderWrapper width={innerWidth}>
         <nav className="px-4 lg:px-6 py-2.5 bg-secondary-default">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a
-              href="https://flowbite.com"
-              className="flex items-center no-underline"
-            >
-              <img
-                src="https://flowbite.com/docs/images/logo.svg"
-                className="mr-3 h-6 sm:h-9"
-                alt="Flowbite Logo"
-              />
-              <span className="self-center text-xl font-semibold whitespace-nowrap text-black">
-                საიტზე გადასვლა
-              </span>
-            </a>
+            <span className="self-center text-xl font-semibold whitespace-nowrap text-black">
+              საიტზე გადასვლა
+            </span>
             <div className="flex items-center lg:order-2">
               <a
                 href="#"
@@ -75,7 +68,7 @@ export default function Header() {
             ></div>
           </div>
         </nav>
-      </header>
+      </SHeaderWrapper>
     </div>
   );
 }

@@ -1,8 +1,7 @@
-import SideBar from "./SideBar/SideBar";
 import Header from "./Header/Header";
-import { Outlet } from "react-router-dom";
 
-import { useWindowSize } from "rooks";
+import SideBar from "./SideBar/SideBar";
+import { Outlet } from "react-router-dom";
 
 export default function UserPageLayout() {
   return (
