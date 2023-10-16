@@ -1,6 +1,11 @@
 import SideBar from "@src/components/SideBar/SideBar";
 import Container from "@src/components/Container/Container";
 
+import { BiUser } from "react-icons/bi";
+import { AiOutlineUnorderedList } from "react-icons/ai";
+
+import { BsFillCreditCardFill } from "react-icons/bs";
+
 export default function User() {
   return (
     <div>
@@ -12,12 +17,19 @@ export default function User() {
               title="ჩემი განცხადებები"
               subText="ჩემი განცხადებები"
               btnText="განცხადების დამატება"
+              icon={<AiOutlineUnorderedList />}
             />
-            <Container title="ჩემი პროფილი" subText="ნინა" btnText="პროფილი" />
             <Container
               title="ჩემი პროფილი"
               subText="ნინა"
-              btnText="განცხადების დამატება"
+              btnText="პროფილი"
+              icon={<BiUser />}
+            />
+            <Container
+              title="ბარათის დამატება"
+              subText="ბარათი"
+              btnText="ბარათი"
+              icon={<BsFillCreditCardFill />}
             />
           </div>
 
