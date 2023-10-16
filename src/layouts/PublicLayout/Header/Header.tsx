@@ -37,9 +37,11 @@ export default function Header() {
             <div className=" font-medium rounded-full text-sm  text-center rounded-full mr-2 mb-2 cursor-pointers  ">
               <Leng />
             </div>
-            <button className="text-white bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 focus:outline-none focus:ring focus:border-primary-dark border-none cursor-pointer ml-8">
-              Log in
-            </button>
+            <Link to="/auth/login">
+              <button className="text-white bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 focus:outline-none focus:ring focus:border-primary-dark border-none cursor-pointer ml-8">
+                Log in
+              </button>
+            </Link>
             <Link to="/auth/signup">
               <button className="text-white  bg-secondary-dark font-medium rounded-full border-none text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer">
                 Get started

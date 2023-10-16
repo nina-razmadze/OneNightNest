@@ -12,7 +12,7 @@ export default function RightImageLine() {
             The largest selection of hotels and other types of accommodation in
             Georgia. Get bonus points on every booking.
           </h2>
-          <button className="text-white mt-[20px] bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer">
+          <button className="text-white mt-[20px] bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer border-none">
             Search for a hotel
           </button>
         </div>
