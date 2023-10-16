@@ -8,9 +8,17 @@ export default function User() {
       <div className="p-4 sm:ml-64 ">
         <div className="p-4  rounded-lg ">
           <div className="grid grid-cols-3 gap-4 mb-4 ml-12 mt-20">
-            <Container />
-            <Container />
-            <Container />
+            <Container
+              title="ჩემი განცხადებები"
+              subText="ჩემი განცხადებები"
+              btnText="განცხადების დამატება"
+            />
+            <Container title="ჩემი პროფილი" subText="ნინა" btnText="პროფილი" />
+            <Container
+              title="ჩემი პროფილი"
+              subText="ნინა"
+              btnText="განცხადების დამატება"
+            />
           </div>
 
           {/* <div className="grid grid-cols-2 gap-4 mb-4"> */}
