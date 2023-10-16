@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom";
 export default function UserPageLayout() {
   return (
     <div>
-      <SideBar />
-      <Outlet />
       <Header />
+      <Outlet />
+      <SideBar />x
     </div>
   );
 }
