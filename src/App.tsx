@@ -4,6 +4,8 @@ import Home from "./views/Home/Home";
 import Auth from "./views/Auth/Auth";
 
 const User = lazy(() => import("./views/User/UserPage"));
+const UserPage = lazy(() => import("./views/User/UserPage"));
+
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
           <Route path="/user" element={<User />} />
 
           <Route path="/auth/*" element={<Auth />} />
-          <Route path="/auth/*" element={<Auth />} />
+          <Route path="/userpage/*" element={<UserPage />} />
         </Routes>
       </Suspense>
     </div>

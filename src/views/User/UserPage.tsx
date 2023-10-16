@@ -1,3 +1,6 @@
+import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+
 import SideBar from "@src/components/SideBar/SideBar";
 import Container from "@src/components/Container/Container";
 
@@ -6,12 +9,24 @@ import { AiOutlineUnorderedList } from "react-icons/ai";
 
 import { BsFillCreditCardFill } from "react-icons/bs";
 
-export default function User() {
+import UserProfile from "./UserProfile/UserProfile";
+import Card from "./Card/Card";
+import Statements from "./Statements/Statements";
+
+export default function UserPage() {
   return (
     <div>
+      <Suspense fallback={<div>Loading</div>}>
+        <Routes>
+          <Route path="/userpage/profile" element={<UserProfile />} />
+          <Route path="/userpage/mylist" element={<Statements />} />
+          <Route path="/userpage/card" element={<Card />} />
+        </Routes>
+      </Suspense>
+
       <SideBar />
       <div className="p-4 sm:ml-64 ">
-        <div className="p-4  rounded-lg ">
+        <div className="p-4 rounded-lg ">
           <div className="grid grid-cols-3 gap-4 mb-4 ml-12 mt-20">
             <Container
               title="ჩემი განცხადებები"
