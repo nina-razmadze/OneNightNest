@@ -18,18 +18,21 @@ export default function User() {
               subText="ჩემი განცხადებები"
               btnText="განცხადების დამატება"
               icon={<AiOutlineUnorderedList />}
+              path={"/userpage/mylist"}
             />
             <Container
               title="ჩემი პროფილი"
               subText="ნინა"
               btnText="პროფილი"
               icon={<BiUser />}
+              path={"/userpage/profile"}
             />
             <Container
               title="ბარათის დამატება"
               subText="ბარათი"
               btnText="ბარათი"
               icon={<BsFillCreditCardFill />}
+              path={"/userpage/card"}
             />
           </div>
 
