@@ -1,4 +1,4 @@
-import Adventages from "@src/components/Adventages/Adventages";
+import { Link } from "react-router-dom";
 
 export default function statements() {
   return (
@@ -86,10 +86,12 @@ export default function statements() {
               </tr>
             </tbody>
           </table>
-          <div className=" flex justify-start m-6 ">
-            <button className="text-black  bg-secondary-default font-medium rounded-full border-none text-sm px-5 py-2.5 text-center     cursor-pointer">
-              ბალანსის შევსება
-            </button>
+          <div className=" flex justify-start mt-6 mb-4 item-center w-full ">
+            <Link to="payment">
+              <button className="text-black  bg-secondary-default font-medium rounded-full border-none text-sm px-5 py-2.5   cursor-pointer">
+                ბალანსის შევსება
+              </button>
+            </Link>
           </div>
         </div>
       </div>
