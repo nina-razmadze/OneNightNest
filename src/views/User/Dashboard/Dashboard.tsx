@@ -32,7 +32,7 @@ export default function Dashboard() {
               subText="ბარათი"
               btnText="ბარათი"
               icon={<BsFillCreditCardFill />}
-              path="/userpage/card"
+              path="/userpage/payment"
             />
           </div>
 

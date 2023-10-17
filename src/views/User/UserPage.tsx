@@ -3,11 +3,10 @@ import { Route, Routes } from "react-router-dom";
 
 import UserPageLayout from "@src/layouts/UserPageLayout/UserPage";
 
-const Card = lazy(() => import("./Card/Card"));
-
+const Payment = lazy(() => import("./Payment/Payment"));
 const Dashboard = lazy(() => import("./Dashboard/Dashboard"));
-const Statements = lazy(() => import("./Statements/Statements"));
 
+const Statements = lazy(() => import("./Statements/Statements"));
 const UserProfile = lazy(() => import("./UserProfile/UserProfile"));
 
 export default function UserPage() {
@@ -17,9 +16,9 @@ export default function UserPage() {
         <Routes>
           <Route path="/" element={<UserPageLayout />}>
             <Route path="/" element={<Dashboard />} />
-            <Route path="profile" element={<UserProfile />} />
+            <Route path="payment" element={<Payment />} />
             <Route path="mylist" element={<Statements />} />
-            <Route path="card" element={<Card />} />
+            <Route path="profile" element={<UserProfile />} />
           </Route>
         </Routes>
       </Suspense>

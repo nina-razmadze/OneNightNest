@@ -87,7 +87,7 @@ export default function statements() {
             </tbody>
           </table>
           <div className=" flex justify-start mt-6 mb-4 item-center w-full ">
-            <Link to="payment">
+            <Link to="/userpage/payment">
               <button className="text-black  bg-secondary-default font-medium rounded-full border-none text-sm px-5 py-2.5   cursor-pointer">
                 ბალანსის შევსება
               </button>
