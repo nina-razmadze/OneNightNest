@@ -2,10 +2,11 @@ import americanExpressCard from "@src/assets/images/americanExpressCard.png";
 import masterCard from "@src/assets/images/musterCard.png";
 
 import visaCard from "@src/assets/images/visaCard.jpg";
+import { Link } from "react-router-dom";
 
 export default function Payment() {
   return (
-    <div className="flex justify-center items-center  pr-12 ml-80 pt-32 pl-	">
+    <div className="flex justify-center items-center  pr-12 ml-80 pt-32 ">
       <div className="w-full max-w-6xl p-4 ">
         <h1 className="pb-12">ჩემი პროფილი</h1>
         <div className=" border shadow bg-secondary-default rounded-lg p-8 ">
@@ -37,11 +38,11 @@ export default function Payment() {
             </div>
           </div>
           <div className="flex justify-start mt-8">
-            {/* <Link to={path}> */}
-            <button className="text-white bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2  mt-6 focus:outline-none focus:ring focus:border-primary-dark border-none cursor-pointer">
-              შევსება
-            </button>
-            {/* </Link> */}
+            <Link to="/userpage/creditcard">
+              <button className="text-white bg-secondary-dark font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2  mt-6 focus:outline-none focus:ring focus:border-primary-dark border-none cursor-pointer">
+                შევსება
+              </button>
+            </Link>
           </div>
         </div>
       </div>
