@@ -1,10 +1,10 @@
 export default function statements() {
   return (
-    <div className="flex justify-center items-center pr-12 ml-80 pt-32">
+    <div className="flex flex-col items-start pr-12 ml-80 pt-32">
       <div className="w-full max-w-6xl p-4">
         <div className="relative overflow-x-auto">
-          <table className="w-full text-sm text-left ">
-            <thead className="text-xs text-white uppercase bg-gray-50 bg-secondary-dark ">
+          <table className="w-full text-sm text-left">
+            <thead className="text-xs text-white uppercase bg-gray-50 bg-secondary-dark">
               <tr>
                 <th scope="col" className="px-6 py-3">
                   ტიპი
@@ -12,74 +12,79 @@ export default function statements() {
                 <th scope="col" className="px-6 py-3">
                   ფასი
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th scope="col" className="px-3 py-3">
                   აქტიურობის ვადა
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr className=" border-b bg-secondary-default  dark:border-gray-700">
+              <tr className=" border-b bg-secondary-default dark:border-gray-700">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap"
                 >
                   სასტუმრო
                 </th>
                 <td className="px-6 py-4">49.99ლ</td>
-                <td className="px-6 py-4">12 თვე</td>
+                <td className="px-3 py-4">12 თვე</td>
               </tr>
-              <tr className=" border-b bg-secondary-default  dark:border-gray-700">
+              <tr className=" border-b bg-secondary-default dark:border-gray-700">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap"
                 >
                   ჰოსტელი
                 </th>
                 <td className="px-6 py-4">29.99</td>
-                <td className="px-6 py-4">12 თვე</td>
+                <td className="px-3 py-4">12 თვე</td>
               </tr>
-              <tr className="bg-secondary-default ">
+              <tr className="bg-secondary-default">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap"
                 >
                   ბინა
                 </th>
                 <td className="px-6 py-4">19.99</td>
-                <td className="px-6 py-4">12 თვე</td>
+                <td className="px-3 py-4">12 თვე</td>
               </tr>
-              <tr className="bg-secondary-default ">
+              <tr className="bg-secondary-default">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap"
                 >
                   სახლი
                 </th>
                 <td className="px-6 py-4">19.99</td>
-                <td className="px-6 py-4">12 თვე</td>
+                <td className="px-3 py-4">12 თვე</td>
               </tr>
-              <tr className="bg-secondary-default ">
+              <tr className="bg-secondary-default">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap"
                 >
                   კოტეჯი
                 </th>
                 <td className="px-6 py-4">29.99</td>
-                <td className="px-6 py-4">12 თვე</td>
+                <td className="px-3 py-4">12 თვე</td>
               </tr>
-              <tr className="bg-secondary-default ">
+              <tr className="bg-secondary-default">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap"
                 >
                   საოჯახო სასტუმრო
                 </th>
                 <td className="px-6 py-4">29.99</td>
-                <td className="px-6 py-4">12 თვე</td>
+                <td className="px-3 py-4">12 თვე</td>
               </tr>
             </tbody>
           </table>
+        </div>
+        <div className="mt-4">
+          <button className="text-white  bg-secondary-dark font-medium rounded-full border-none text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer">
+            Get started
+          </button>
         </div>
       </div>
     </div>
