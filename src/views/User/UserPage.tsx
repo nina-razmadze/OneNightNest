@@ -16,7 +16,7 @@ export default function UserPage() {
       <Suspense fallback={<div>Loading</div>}>
         <Routes>
           <Route path="/" element={<UserPageLayout />}>
-            <Route index element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="profile" element={<UserProfile />} />
             <Route path="mylist" element={<Statements />} />
             <Route path="card" element={<Card />} />
