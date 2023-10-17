@@ -3,20 +3,17 @@ export default function statements() {
     <div className="flex justify-center items-center pr-12 ml-80 pt-32">
       <div className="w-full max-w-6xl p-4">
         <div className="relative overflow-x-auto">
-          <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 bg-secondary-dark dark:text-gray-400">
+          <table className="w-full text-sm text-left ">
+            <thead className="text-xs text-white uppercase bg-gray-50 bg-secondary-dark ">
               <tr>
                 <th scope="col" className="px-6 py-3">
-                  Product name
+                  ტიპი
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Color
+                  ფასი
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Category
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Price
+                  აქტიურობის ვადა
                 </th>
               </tr>
             </thead>
@@ -24,35 +21,62 @@ export default function statements() {
               <tr className=" border-b bg-secondary-default  dark:border-gray-700">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
                 >
-                  Apple MacBook Pro 17"
+                  სასტუმრო
                 </th>
-                <td className="px-6 py-4">Silver</td>
-                <td className="px-6 py-4">Laptop</td>
-                <td className="px-6 py-4">$2999</td>
+                <td className="px-6 py-4">49.99ლ</td>
+                <td className="px-6 py-4">12 თვე</td>
               </tr>
               <tr className=" border-b bg-secondary-default  dark:border-gray-700">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
                 >
-                  Microsoft Surface Pro
+                  ჰოსტელი
                 </th>
-                <td className="px-6 py-4">White</td>
-                <td className="px-6 py-4">Laptop PC</td>
-                <td className="px-6 py-4">$1999</td>
+                <td className="px-6 py-4">29.99</td>
+                <td className="px-6 py-4">12 თვე</td>
               </tr>
               <tr className="bg-secondary-default ">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
                 >
-                  Magic Mouse 2
+                  ბინა
                 </th>
-                <td className="px-6 py-4">Black</td>
-                <td className="px-6 py-4">Accessories</td>
-                <td className="px-6 py-4">$99</td>
+                <td className="px-6 py-4">19.99</td>
+                <td className="px-6 py-4">12 თვე</td>
+              </tr>
+              <tr className="bg-secondary-default ">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
+                >
+                  სახლი
+                </th>
+                <td className="px-6 py-4">19.99</td>
+                <td className="px-6 py-4">12 თვე</td>
+              </tr>
+              <tr className="bg-secondary-default ">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
+                >
+                  კოტეჯი
+                </th>
+                <td className="px-6 py-4">29.99</td>
+                <td className="px-6 py-4">12 თვე</td>
+              </tr>
+              <tr className="bg-secondary-default ">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium text-black whitespace-nowrap "
+                >
+                  საოჯახო სასტუმრო
+                </th>
+                <td className="px-6 py-4">29.99</td>
+                <td className="px-6 py-4">12 თვე</td>
               </tr>
             </tbody>
           </table>
