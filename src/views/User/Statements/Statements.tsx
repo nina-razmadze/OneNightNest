@@ -1,24 +1,97 @@
 export default function statements() {
   return (
-    <div>
-      <div className="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-        <p className="text-2xl text-gray-400 dark:text-gray-500">
-          <svg
-            className="w-3.5 h-3.5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 18"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 1v16M1 9h16"
-            />
-          </svg>
-        </p>
+    <div className="flex justify-center items-center pr-12 ml-80 pt-32">
+      <div className="w-full max-w-6xl p-4">
+        <div className="relative overflow-x-auto  bg-secondary-default">
+          <table className="w-full text-sm text-left  ">
+            <thead className="text-xs text-gray-700 uppercase bg-secondary-dark ">
+              <tr>
+                <th scope="col" className="px-6 py-3">
+                  Product name
+                </th>
+                <th scope="col" className="px-6 py-3">
+                  Color
+                </th>
+                <th scope="col" className="px-6 py-3">
+                  Category
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className=" border-b">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium  whitespace-nowrap dark:text-white"
+                >
+                  Apple MacBook Pro 17"
+                </th>
+                <td className="px-6 py-4">Silver</td>
+                <td className="px-6 py-4">Laptop</td>
+              </tr>
+              <tr className=" border-b ">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium whitespace-nowrap dark:text-white"
+                >
+                  Microsoft Surface Pro
+                </th>
+                <td className="px-6 py-4">White</td>
+                <td className="px-6 py-4">Laptop PC</td>
+              </tr>
+              <tr className="bg-white ">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Magic Mouse 2
+                </th>
+                <td className="px-6 py-4">Black</td>
+                <td className="px-6 py-4">Accessories</td>
+              </tr>
+
+              <tr className="bg-white ">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium  whitespace-nowrap dark:text-white"
+                >
+                  Product 4
+                </th>
+                <td className="px-6 py-4">Blue</td>
+                <td className="px-6 py-4">Accessory</td>
+              </tr>
+              <tr className="bg-white">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium whitespace-nowrap dark:text-white"
+                >
+                  Product 2
+                </th>
+                <td className="px-6 py-4">Blu</td>
+                <td className="px-6 py-4">Accessory</td>
+              </tr>
+              <tr className="bg-white">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium whitespace-nowrap dark:text-white"
+                >
+                  Product 2
+                </th>
+                <td className="px-6 py-4">Blu</td>
+                <td className="px-6 py-4">Accessory</td>
+              </tr>
+              <tr className="bg-white ">
+                <th
+                  scope="row"
+                  className="px-6 py-4 font-medium  whitespace-nowrap dark:text-white"
+                >
+                  Product 2
+                </th>
+                <td className="px-6 py-4">Blu</td>
+                <td className="px-6 py-4">Accessory</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
