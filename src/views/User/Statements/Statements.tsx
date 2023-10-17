@@ -1,10 +1,16 @@
+import Adventages from "@src/components/Adventages/Adventages";
+
 export default function statements() {
   return (
-    <div className="flex flex-col items-start pr-12 ml-80 pt-32">
-      <div className="w-full max-w-6xl p-4">
+    <div className="flex justify-center items-center  pr-12 ml-80 pt-32">
+      <div className="w-full max-w-6xl p-4  bg-secondary-dark rounded-lg">
+        <div className="text-white flex flex-col pt-4">
+          <h2>განცხადების დამატება</h2>
+          <p className="py-4">განცხადების ატვირთვის ღირებულება</p>
+        </div>
         <div className="relative overflow-x-auto">
-          <table className="w-full text-sm text-left">
-            <thead className="text-xs text-white uppercase bg-gray-50 bg-secondary-dark">
+          <table className="w-full text-sm text-left ">
+            <thead className="text-xs text-black uppercase bg-secondary-default">
               <tr>
                 <th scope="col" className="px-6 py-3">
                   ტიპი
@@ -80,11 +86,11 @@ export default function statements() {
               </tr>
             </tbody>
           </table>
-        </div>
-        <div className="mt-4">
-          <button className="text-white  bg-secondary-dark font-medium rounded-full border-none text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer">
-            Get started
-          </button>
+          <div className=" flex justify-start m-6 ">
+            <button className="text-black  bg-secondary-default font-medium rounded-full border-none text-sm px-5 py-2.5 text-center     cursor-pointer">
+              ბალანსის შევსება
+            </button>
+          </div>
         </div>
       </div>
     </div>
