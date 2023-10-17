@@ -8,7 +8,7 @@ export default function Header() {
   const { innerWidth } = useWindowSize();
 
   return (
-    <div className="m-auto justify-end items-center ">
+    <div className="m-auto justify-end items-center shadow ">
       <SHeaderWrapper width={innerWidth}>
         <nav className="px-4 lg:px-6 py-2.5 bg-secondary-default">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">

@@ -1,3 +1,8 @@
+import americanExpressCard from "@src/assets/images/americanExpressCard.png";
+import masterCard from "@src/assets/images/musterCard.png";
+
+import visaCard from "@src/assets/images/visaCard.jpg";
+
 export default function Payment() {
   return (
     <div className="flex justify-center items-center  pr-12 ml-80 pt-32 pl-	">
@@ -8,9 +13,16 @@ export default function Payment() {
             ბალანსის შევსება შესაძლებელია VISA, MasterCard და American Express
             ბარათებით.
           </p>
-          <div className="flex items-center ">
-            <p></p>
-            <p className="mb-3 ml-2 font-normal text-gray-600 mt-4"></p>
+          <div className="flex items-center pb-4 ">
+            <img
+              src={americanExpressCard}
+              style={{ width: "60px", height: "30px", paddingRight: "10px" }}
+            ></img>
+            <img
+              src={masterCard}
+              style={{ width: "60px", height: "30px", paddingRight: "10px" }}
+            ></img>{" "}
+            <img src={visaCard} style={{ width: "50px", height: "30px" }}></img>
           </div>
           <div className="mb-6">
             <label className="block pb-4 text-sm font-medium text-gray-900">
