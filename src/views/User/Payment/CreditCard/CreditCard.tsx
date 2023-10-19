@@ -12,6 +12,14 @@ export default function CreditCard() {
   return (
     <div className="flex justify-center items-center pr-12 ml-80 pt-32">
       <div className="w-full max-w-6xl p-4 bg-secondary-dark rounded-lg">
+        <Cards
+          number={number}
+          name={name}
+          expiry={expiry}
+          cvc={cvc}
+          focused={focus}
+        />
+
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a
             href="#"
