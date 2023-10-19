@@ -1,9 +1,7 @@
-
 import { lazy, Suspense } from "react";
 
 import Home from "./views/Home/Home";
 import Auth from "./views/Auth/Auth";
-
 
 const UserPage = lazy(() => import("./views/User/UserPage"));
 

@@ -11,23 +11,53 @@ export default function CreditCard() {
   const [cvc, setCvc] = useState("");
   const [focus, setfocus] = useState("");
 
-  const handleInputChange = () => {};
-  const handleInputFocus = () => {};
-
   return (
-    <div>
-      <form>
-        <input
-          type="tel"
-          name="number"
-          value={number}
-          placeholder="Card Number"
-          onChange={(e) => setNumber(e.target.value)}
-          onFocus={handleInputFocus}
+    <div className="flex justify-center items-center  pr-12 ml-80 pt-32">
+      <div className="w-full max-w-6xl p-4  bg-secondary-dark rounded-lg">
+        <Cards
+          number={number}
+          name={name}
+          expiry={expiry}
+          cvc={cvc}
+          // focused={focus}
         />
-        ...
-      </form>
+        <form>
+          <input
+            type="tel"
+            name="number"
+            value={number}
+            placeholder="Card Number"
+            onChange={(e) => setNumber(e.target.value)}
+            onFocus={(e) => setfocus(e.target.name)}
+          />
+          <input
+            type="text"
+            name="name"
+            value={name}
+            placeholder="Name"
+            onChange={(e) => setName(e.target.value)}
+            onFocus={(e) => setfocus(e.target.name)}
+          />
+          <input
+            type="text"
+            name="expiry"
+            value={expiry}
+            placeholder="MM/YY Expiry"
+            onChange={(e) => setExpiry(e.target.value)}
+            onFocus={(e) => setfocus(e.target.name)}
+          />
+          <input
+            type="tel"
+            name="cvc"
+            value={cvc}
+            placeholder="CVC"
+            onChange={(e) => setCvc(e.target.value)}
+            onFocus={(e) => setfocus(e.target.name)}
+          />
+        </form>
+      </div>
     </div>
+
     // <div className="flex justify-center items-center  pr-12 ml-80 pt-32 ">
     //   <div className="p-4 ">
     //     <h1 className="pb-12">ბარათის მონაცემები</h1>
