@@ -10,6 +10,6 @@ export const CustomLayout = styled(Layout)`
 `;
 
 export const CustomContent = styled(Content)`
-  margin-top: 64px;  
-  margin-bottom: 64px; */
+  margin-top: 64px;
+  margin-bottom: 64px;
 `;

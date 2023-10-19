@@ -1,7 +1,11 @@
+import "react-credit-cards/es/styles-compiled.css";
+
 import { lazy, Suspense } from "react";
+import Cards from "react-credit-cards";
 
 import Home from "./views/Home/Home";
 import Auth from "./views/Auth/Auth";
+
 
 const UserPage = lazy(() => import("./views/User/UserPage"));
 
