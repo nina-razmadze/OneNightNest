@@ -1,8 +1,33 @@
-import useState from "react";
+import "react-credit-cards/es/styles-compiled.css";
+
+import Cards from "react-credit-cards";
+
+import { useState } from "react";
 
 export default function CreditCard() {
+  const [number, setNumber] = useState("");
+  const [name, setName] = useState("");
+  const [expiry, setExpiry] = useState("");
+  const [cvc, setCvc] = useState("");
+  const [focus, setfocus] = useState("");
+
+  const handleInputChange = () => {};
+  const handleInputFocus = () => {};
+
   return (
-    <div></div>
+    <div>
+      <form>
+        <input
+          type="tel"
+          name="number"
+          value={number}
+          placeholder="Card Number"
+          onChange={(e) => setNumber(e.target.value)}
+          onFocus={handleInputFocus}
+        />
+        ...
+      </form>
+    </div>
     // <div className="flex justify-center items-center  pr-12 ml-80 pt-32 ">
     //   <div className="p-4 ">
     //     <h1 className="pb-12">ბარათის მონაცემები</h1>
