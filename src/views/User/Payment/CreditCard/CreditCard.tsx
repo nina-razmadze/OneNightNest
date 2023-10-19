@@ -1,19 +1,26 @@
-import Cards from "react-credit-cards";
+import Cards, { Focused } from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
+
 import { useState } from "react";
 
 export default function CreditCard() {
   const [number, setNumber] = useState("");
-  const [name, setName] = useState("");
   const [expiry, setExpiry] = useState("");
+
+  const [name, setName] = useState("");
   const [cvc, setCvc] = useState("");
-  const [focus, setFocus] = useState("");
+
+  const [focus, setFocus] = useState<Focused | undefined>(undefined);
+
+  const handleFormSubmit = (e: any) => {
+    e.preventDefault();
+  };
 
   return (
     <div className="flex justify-center items-center pr-12 ml-80 pt-32">
       <div className="w-full max-w-6xl p-4 bg-secondary-dark rounded-lg">
         <div className="grid grid-cols-2 gap-4">
-          <div className=" flex items-center">
+          <div className=" flex items-center  rounded-lg">
             <Cards
               number={number}
               name={name}
@@ -22,11 +29,9 @@ export default function CreditCard() {
               focused={focus}
             />
           </div>
-
-          {/* Second Column: Form */}
           <div>
-            <form>
-              <div>
+            <form onSubmit={handleFormSubmit} className="mr-8">
+              <div className="mt-4">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   Card Number
                 </label>
@@ -36,11 +41,11 @@ export default function CreditCard() {
                   value={number}
                   placeholder="XXXX XXXX XXXX XXXX"
                   onChange={(e) => setNumber(e.target.value)}
-                  onFocus={() => setFocus("number")}
+                  onFocus={(e) => setFocus("name")}
                   className="bg-secondary-default border-none text-gray-900 sm:text-sm rounded-lg  block w-full p-2.5 "
                 />
               </div>
-              <div>
+              <div className="mt-4">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   Name
                 </label>
@@ -54,7 +59,7 @@ export default function CreditCard() {
                 />
               </div>
 
-              <div>
+              <div className="mt-4">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   MM/YY Expiry
                 </label>
@@ -68,9 +73,9 @@ export default function CreditCard() {
                   className="bg-secondary-default border-none text-gray-900 sm:text-sm rounded-lg  block w-full p-2.5 "
                 />
               </div>
-              <div>
+              <div className="mt-4">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                  MM/YY Expiry
+                  CVC
                 </label>
                 <input
                   type="tel"
@@ -83,7 +88,10 @@ export default function CreditCard() {
                 />
               </div>
               <div className="flex items-center justify-end mt-6">
-                <button className="text-secondary-dark  bg-secondary-default  font-medium rounded-full border-none text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer">
+                <button
+                  type="submit"
+                  className="text-secondary-dark  bg-secondary-default  font-medium rounded-full border-none text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer"
+                >
                   Get started
                 </button>
               </div>
