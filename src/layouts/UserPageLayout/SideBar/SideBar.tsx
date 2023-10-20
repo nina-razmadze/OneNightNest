@@ -35,69 +35,65 @@ export default function SideBar() {
               </a>
             </li>
 
-            <li className="list-none no-underline	 mb-0">
-              <a
-                href="#"
-                className="flex items-center p-2  text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover-bg-gray-700 group no-underline"
+            <li className="list-none mb-0 flex items-center p-2  text-white rounded-lg  group no-underline">
+              <svg
+                className="w-5 h-5 text-gray-500 transition duration-75  "
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 21"
               >
-                <svg
-                  className="w-5 h-5 text-gray-500 transition duration-75  "
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 22 21"
-                >
-                  <GiPapers style={{ color: "white", fontSize: "22px" }} />
-                </svg>
-                <span className="ml-3">გვერდები</span>
-              </a>
+                <GiPapers style={{ color: "white", fontSize: "22px" }} />
+              </svg>
+              <span className="ml-3">გვერდები</span>
             </li>
 
-            <li className="list-none no-underline	 mb-0">
-              <a
-                href="#"
-                className="flex items-center p-2  rounded-lg text-white dark:hover-bg-gray-700 group no-underline"
-              >
-                <svg
-                  className="flex-shrink-0 w-5 h-5transition duration-75 "
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 18 18"
-                ></svg>
-                <BsFillHouseAddFill />
+            <li className="list-none no-underline	 mb-0 flex items-center p-2  rounded-lg text-white  group ">
+              <svg
+                className="flex-shrink-0 w-5 h-5transition duration-75 "
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 18 18"
+              ></svg>
+              <BsFillHouseAddFill />
 
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  განცხად. დამატება
-                </span>
-              </a>
+              <span className="flex-1 ml-3 whitespace-nowrap">
+                განცხად. დამატება
+              </span>
             </li>
 
-            <li className="list-none no-underline	 mb-0">
-              <a
-                href="#"
-                className="flex items-center p-2  rounded-lg text-white dark:hover-bg-gray-700 group no-underline"
-              >
-                <svg
-                  className="flex-shrink-0 w-5 h-5transition duration-75 "
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 18 18"
-                ></svg>
-                <AiOutlineUnorderedList />
+            <li className="list-none no-underline	 mb-0 flex items-center p-2  rounded-lg text-white  group ">
+              <svg
+                className="flex-shrink-0 w-5 h-5transition duration-75 "
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 18 18"
+              ></svg>
+              <AiOutlineUnorderedList />
 
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  ჩემი განცხადებები
-                </span>
-              </a>
+              <span className="flex-1 ml-3 whitespace-nowrap">
+                ჩემი განცხადებები
+              </span>
             </li>
 
-            <li className="list-none no-underline	 mb-0">
-              <a
-                href="#"
-                className="flex items-center p-2 text-white rounded-lg  group no-underline"
-              >
+            <li className="list-none no-underline	 mb-0 flex items-center p-2 text-white rounded-lg  group no-underline">
+              <svg
+                className="flex-shrink-0 w-5 h-5 transition duration-75"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              ></svg>
+              <FaHotel />
+              <span className="flex-1 ml-3 whitespace-nowrap">
+                ჩემი დაჯავშნილები
+              </span>
+            </li>
+
+            <Link to="/userpage/payment" className="no-underline">
+              <li className="list-none mb-0 flex items-center p-2 text-white rounded-lg group">
                 <svg
                   className="flex-shrink-0 w-5 h-5 transition duration-75"
                   aria-hidden="true"
@@ -105,31 +101,10 @@ export default function SideBar() {
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 ></svg>
-                <FaHotel />
+                <BsFillCreditCardFill />
                 <span className="flex-1 ml-3 whitespace-nowrap">
-                  ჩემი დაჯავშნილები
+                  ბარათის დამატება
                 </span>
-              </a>
-            </li>
-            
-            <Link to='/userpage/payment'>
-              <li className="list-none no-underline	 mb-0">
-                <a
-                  href="#"
-                  className="flex items-center p-2 text-white rounded-lg  group no-underline"
-                >
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 transition duration-75"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  ></svg>
-                  <BsFillCreditCardFill />
-                  <span className="flex-1 ml-3 whitespace-nowrap">
-                    ბარათის დამატება
-                  </span>
-                </a>
               </li>
             </Link>
           </ul>
