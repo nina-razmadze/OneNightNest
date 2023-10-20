@@ -62,6 +62,23 @@ export default function SideBar() {
               </li>
             </Link>
 
+            <Link to="/userpage/" className="no-underline">
+              <li className="list-none  mb-0 flex items-center p-2  rounded-lg text-white  group ">
+                <svg
+                  className="flex-shrink-0 w-5 h-5transition duration-75 "
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 18 18"
+                ></svg>
+                <AiOutlineUnorderedList />
+
+                <span className="flex-1 ml-3 whitespace-nowrap">
+                  ჩემი გვერდი
+                </span>
+              </li>
+            </Link>
+
             <Link to="/userpage/mylist" className="no-underline">
               <li className="list-none  mb-0 flex items-center p-2  rounded-lg text-white  group ">
                 <svg
