@@ -1,7 +1,8 @@
-import { GiPapers } from "react-icons/gi";
-
-import { BsFillHouseAddFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import { FaHotel } from "react-icons/fa";
+
+import { GiPapers } from "react-icons/gi";
+import { BsFillHouseAddFill } from "react-icons/bs";
 
 import { BsFillCreditCardFill } from "react-icons/bs";
 import { AiOutlineUnorderedList } from "react-icons/ai";
@@ -16,10 +17,10 @@ export default function SideBar() {
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-secondary-dark">
           <ul className="space-y-2 font-medium">
-            <li className="list-none no-underline mb-0 flex items-center justify-center ">
+            <li className="list-none mb-0 flex items-center justify-center">
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover-bg-gray-700 group no-underline"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover-bg-gray-700 group"
               >
                 <svg
                   className="w-5 h-5 text-gray-500 transition duration-75"
@@ -28,8 +29,9 @@ export default function SideBar() {
                   fill="currentColor"
                   viewBox="0 0 22 21"
                 ></svg>
-
-                <span className="py-2 px-4 text-2xl ">NNO.ge</span>
+                <Link to="/">
+                  <span className="py-2 px-4 text-2xl text-white">NNO.ge</span>
+                </Link>
               </a>
             </li>
 
@@ -64,10 +66,11 @@ export default function SideBar() {
                   viewBox="0 0 18 18"
                 ></svg>
                 <BsFillHouseAddFill />
-
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  განცხ. დამატება
-                </span>
+                <Link to="/userpage/mylist">
+                  <span className="flex-1 ml-3 whitespace-nowrap">
+                    განცხ. დამატება
+                  </span>
+                </Link>
               </a>
             </li>
             <li className="list-none no-underline	 mb-0">
@@ -122,10 +125,11 @@ export default function SideBar() {
                   =
                 </svg>
                 <BsFillCreditCardFill />
-
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  ბარათის დამატება
-                </span>
+                <Link>
+                  <span className="flex-1 ml-3 whitespace-nowrap">
+                    ბარათის დამატება
+                  </span>
+                </Link>
               </a>
             </li>
           </ul>
