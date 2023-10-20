@@ -56,30 +56,30 @@ export default function SideBar() {
             <li className="list-none no-underline	 mb-0">
               <a
                 href="#"
-                className="flex items-center p-2  rounded-lg text-white group no-underline"
+                className="flex items-center p-2  rounded-lg text-white dark:hover-bg-gray-700 group no-underline"
               >
                 <svg
-                  className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  className="flex-shrink-0 w-5 h-5transition duration-75 "
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
                   viewBox="0 0 18 18"
                 ></svg>
                 <BsFillHouseAddFill />
-                <Link to="/userpage/mylist">
-                  <span className="flex-1 ml-3 whitespace-nowrap">
-                    განცხ. დამატება
-                  </span>
-                </Link>
+
+                <span className="flex-1 ml-3 whitespace-nowrap">
+                  განცხად. დამატება
+                </span>
               </a>
             </li>
+
             <li className="list-none no-underline	 mb-0">
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover-bg-gray-700 group no-underline"
+                className="flex items-center p-2  rounded-lg text-white dark:hover-bg-gray-700 group no-underline"
               >
                 <svg
-                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  className="flex-shrink-0 w-5 h-5transition duration-75 "
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -92,13 +92,14 @@ export default function SideBar() {
                 </span>
               </a>
             </li>
+
             <li className="list-none no-underline	 mb-0">
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover-bg-gray-700 group no-underline"
+                className="flex items-center p-2 text-white rounded-lg  group no-underline"
               >
                 <svg
-                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  className="flex-shrink-0 w-5 h-5 transition duration-75"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -110,23 +111,27 @@ export default function SideBar() {
                 </span>
               </a>
             </li>
-            <li className="list-none no-underline	 mb-0 flex items-center p-2 text-white rounded-lg  group ">
-              <svg
-                className="flex-shrink-0 w-5 h-5 text-white transition duration-75  "
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 18"
-              >
-                =
-              </svg>
-              <BsFillCreditCardFill />
-              <Link to="/userpage/payment">
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  ბარათის დამატება
-                </span>
-              </Link>
-            </li>
+            
+            <Link to='/userpage/payment'>
+              <li className="list-none no-underline	 mb-0">
+                <a
+                  href="#"
+                  className="flex items-center p-2 text-white rounded-lg  group no-underline"
+                >
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 transition duration-75"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  ></svg>
+                  <BsFillCreditCardFill />
+                  <span className="flex-1 ml-3 whitespace-nowrap">
+                    ბარათის დამატება
+                  </span>
+                </a>
+              </li>
+            </Link>
           </ul>
         </div>
       </aside>
