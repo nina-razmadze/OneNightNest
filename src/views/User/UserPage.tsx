@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import UserPageLayout from "@src/layouts/UserPageLayout/UserPage";
+import AddStatement from "./Statements/AddStatement/AddStatement";
 
 const Payment = lazy(() => import("./Payment/Payment"));
 const Dashboard = lazy(() => import("./Dashboard/Dashboard"));
@@ -21,6 +22,7 @@ export default function UserPage() {
             <Route path="payment" element={<Payment />} />
             <Route path="creditcard" element={<CreditCard />} />
             <Route path="mylist" element={<Statements />} />
+            <Route path="addstatement" element={<AddStatement />} />
             <Route path="profile" element={<UserProfile />} />
           </Route>
         </Routes>

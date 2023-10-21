@@ -14,7 +14,7 @@ export default function Dashboard() {
       <div className="p-4 sm:ml-64 ">
         <div className="p-4 rounded-lg ">
           <div className="grid grid-cols-3 gap-4 mb-4 ml-12 mt-20">
-            <Link to="/userpage/mylist" className="no-underline">
+            <Link to="/userpage/addstatement" className="no-underline">
               <Container
                 title="ჩემი განცხადებები"
                 subText="ჩემი განცხადებები"

@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import { FaHotel } from "react-icons/fa";
 
 import { GiPapers } from "react-icons/gi";
-import { BsFillHouseAddFill } from "react-icons/bs";
+import { AiTwotoneHome } from "react-icons/ai";
 
+import { BsFillHouseAddFill } from "react-icons/bs";
 import { BsFillCreditCardFill } from "react-icons/bs";
+
 import { AiOutlineUnorderedList } from "react-icons/ai";
 
 export default function SideBar() {
@@ -71,7 +73,7 @@ export default function SideBar() {
                   fill="currentColor"
                   viewBox="0 0 18 18"
                 ></svg>
-                <AiOutlineUnorderedList />
+                <AiTwotoneHome />
 
                 <span className="flex-1 ml-3 whitespace-nowrap">
                   ჩემი გვერდი

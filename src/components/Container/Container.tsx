@@ -19,7 +19,7 @@ export default function Container({
       <h5 className="mb-2 text-2xl font-bold tracking-tight no-underline text-gray-900">
         {title}
       </h5>
-      <div className="flex items-center">
+      <div className="flex items-center text-black">
         {icon}
         <p className="mb-3 ml-2 font-normal text-black mt-4">{subText}</p>
       </div>
