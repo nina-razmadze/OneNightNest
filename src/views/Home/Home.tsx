@@ -9,13 +9,11 @@ import ImageLine from "@src/components/ContentImage/ImageLines/ImageLine";
 
 export default function Home() {
   return (
-    <PublicLayout>
-      <div className={HomeBackground}>
-        <ContentImage />
-        <SearchForm />
-        <ImageLine />
-        <Adventages />
-      </div>
-    </PublicLayout>
+    <div className={HomeBackground}>
+      <ContentImage />
+      <SearchForm />
+      <ImageLine />
+      <Adventages />
+    </div>
   );
 }

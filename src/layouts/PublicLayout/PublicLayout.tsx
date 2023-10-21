@@ -1,6 +1,5 @@
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-
 import { CustomLayout } from "./PublicLayout.styled";
 import { Outlet } from "react-router-dom";
 

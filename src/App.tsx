@@ -14,11 +14,12 @@ function App() {
     <div>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/" element={<PublicLayout />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/auth/*" element={<Auth />} />
-          <Route path="/userpage/*" element={<UserPage />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="auth/*" element={<Auth />} />
+          <Route path="userpage/*" element={<UserPage />} />
+          <Route element={<PublicLayout />}>
+            <Route index element={<Home />} />
+            <Route path="product" element={<Product />} />
+          </Route>
         </Routes>
       </Suspense>
     </div>
