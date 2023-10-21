@@ -47,7 +47,7 @@ export default function SideBar() {
               <span className="ml-3">გვერდები</span>
             </li>
 
-            <Link to="/userpage/mylist" className="no-underline">
+            <Link to="/userpage/addstatement" className="no-underline">
               <li className="list-none  mb-0 flex items-center p-2  rounded-lg text-white  group ">
                 <svg
                   className="flex-shrink-0 w-5 h-5transition duration-75 "
@@ -81,7 +81,7 @@ export default function SideBar() {
               </li>
             </Link>
 
-            <Link to="/userpage/mylist" className="no-underline">
+            <Link to="/userpage/mystatements" className="no-underline">
               <li className="list-none  mb-0 flex items-center p-2  rounded-lg text-white  group ">
                 <svg
                   className="flex-shrink-0 w-5 h-5transition duration-75 "

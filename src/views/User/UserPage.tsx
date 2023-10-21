@@ -21,7 +21,7 @@ export default function UserPage() {
             <Route path="/" element={<Dashboard />} />
             <Route path="payment" element={<Payment />} />
             <Route path="creditcard" element={<CreditCard />} />
-            <Route path="mylist" element={<Statements />} />
+            <Route path="mystatements" element={<Statements />} />
             <Route path="addstatement" element={<AddStatement />} />
             <Route path="profile" element={<UserProfile />} />
           </Route>
