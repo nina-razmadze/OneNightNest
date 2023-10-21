@@ -5,11 +5,12 @@ import UserPageLayout from "@src/layouts/UserPageLayout/UserPage";
 import AddStatement from "./Statements/AddStatement/AddStatement";
 
 const Payment = lazy(() => import("./Payment/Payment"));
+
+
 const Dashboard = lazy(() => import("./Dashboard/Dashboard"));
-
 const Statements = lazy(() => import("./Statements/Statements"));
-const UserProfile = lazy(() => import("./UserProfile/UserProfile"));
 
+const UserProfile = lazy(() => import("./UserProfile/UserProfile"));
 const CreditCard = lazy(() => import("./Payment/CreditCard/CreditCard"));
 
 export default function UserPage() {
